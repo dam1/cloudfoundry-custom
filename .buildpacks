@@ -1,2 +1,5 @@
 https://github.com/cloudfoundry/cf-buildpack-nodejs.git
 https://github.com/mcollina/heroku-buildpack-graphicsmagick.git
+
+
+cf push damieam --no-manifest --no-start -c "node app.js" -b git://github.com/dam1/cloudfoundry-custom.git
