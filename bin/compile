@@ -18,7 +18,7 @@ unset GIT_DIR
 echo "=====> aleee"
 
 
-for BUILDPACK in $(cat $1/../../../buildpacks/cloudfoundry-custom/.buildpacks); do
+for BUILDPACK in $(cat ./../../buildpacks/cloudfoundry-custom/.buildpacks); do
 echo "=====> aleee"
 
   dir=$(mktemp -t buildpackXXXXX)
