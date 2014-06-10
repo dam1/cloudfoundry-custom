@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-echo "=====> aleee"
 set -e
-echo "=====> aleee"
 
 function indent() {
   c='s/^/       /'
@@ -10,17 +8,11 @@ function indent() {
     Darwin) sed -l "$c";;
     *)      sed -u "$c";;
   esac
-  echo "=====> aleee"
-
 }
 
 unset GIT_DIR
-echo "=====> aleee"
 
-
-for BUILDPACK in $(cat ./../../buildpacks/cloudfoundry-custom/.buildpacks); do
-echo "=====> aleee"
-
+for BUILDPACK in $(cat $0/.buildpacks); do
   dir=$(mktemp -t buildpackXXXXX)
   rm -rf $dir
 
